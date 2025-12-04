@@ -27,6 +27,13 @@
   --bs-dark: #ab6b51;
   --bs-dark-rgb: 171, 107, 81;
 
+  --bs-link-color: var(  --bs-white);          /* vit */
+  --bs-link-hover-color: var(--bs-primary); /* latte */
+  --bs-link-underline-opacity: 0;
+  --bs-link-underline-opacity-hover: 1;
+
+
+
   /* Typografi */
   --bs-font-sans-serif: "Lato", system-ui, -apple-system, sans-serif; /* brödtext */
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -60,7 +67,7 @@ color: var(--bs-success)
 
 }
 main {
-  margin-top: 70px; /* lägger sidans innehåll under navbar*/
+   padding-top: clamp(5rem, 14vw, 10rem);/* lägger sidans innehåll under navbar*/
 }
 
 
