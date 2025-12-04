@@ -1,5 +1,90 @@
-#151618
-#556b2f
-#a9a454
-#efe4d4
-#b07946
+/*
+#151618  svart
+#39918c  turkos
+#2f435a  mörkt blå
+#efe4d4  vitish
+#d0b49f  latte
+#be9078  brun
+#ab6b51  mörkare brun
+*/
+
+:root {
+  --bs-white: #efe4d4;
+  --bs-black: #151618;
+
+  --bs-primary: #d0b49f;
+  --bs-primary-rgb: 208, 180, 159;
+
+  --bs-secondary: #39918c;
+  --bs-secondary-rgb: 57, 145, 140;
+
+  --bs-success: #2f435a;
+  --bs-success-rgb: 47, 67, 90;
+
+  --bs-light: #be9078;
+  --bs-light-rgb: 190, 144, 120;
+
+  --bs-dark: #ab6b51;
+  --bs-dark-rgb: 171, 107, 81;
+
+  /* Typografi */
+  --bs-font-sans-serif: "Lato", system-ui, -apple-system, sans-serif; /* brödtext */
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-line-height: 1.6;
+
+  --heading-font: "Playfair Display", serif;  /* rubriker */
+  --logo-font: "Sacramento", cursive;        /* företagsnamn/logga */
+}
+
+
+/* Brödtext – hela sidan */
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  line-height: var(--bs-body-line-height);
+}
+
+/* Rubriker */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+.logo-text {
+  font-family: var(--logo-font);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+font-size: clamp(2rem, 6vw, 5rem);
+color: var(--bs-success)
+
+}
+main {
+  margin-top: 70px; /* lägger sidans innehåll under navbar*/
+}
+
+
+
+
+
+
+/* företagsnamn */
+.sacramento-regular {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*brödtext*/
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*rubriker*/
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
