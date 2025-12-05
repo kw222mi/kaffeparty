@@ -8,33 +8,17 @@
 #ab6b51  mörkare brun
 */
 
-:root {
-  --bs-white: #efe4d4;
-  --bs-black: #151618;
 
-  --bs-primary: #d0b49f;
-  --bs-primary-rgb: 208, 180, 159;
+ :root {
+  --color-black: #151618;        /* svart */
+  --color-turquoise: #39918c;    /* turkos */
+  --color-navy: #2f435a;         /* mörkt blå */
+  --color-cream: #efe4d4;        /* vitish */
+  --color-latte: #d0b49f;        /* latte */
+  --color-brown: #be9078;        /* brun */
+  --color-brown-dark: #4A2C29;   /* mörkare brun */
 
-  --bs-secondary: #39918c;
-  --bs-secondary-rgb: 57, 145, 140;
-
-  --bs-success: #2f435a;
-  --bs-success-rgb: 47, 67, 90;
-
-  --bs-light: #be9078;
-  --bs-light-rgb: 190, 144, 120;
-
-  --bs-dark: #ab6b51;
-  --bs-dark-rgb: 171, 107, 81;
-
-  --bs-link-color: var(  --bs-white);          /* vit */
-  --bs-link-hover-color: var(--bs-primary); /* latte */
-  --bs-link-underline-opacity: 0;
-  --bs-link-underline-opacity-hover: 1;
-
-
-
-  /* Typografi */
+    /* Typografi */
   --bs-font-sans-serif: "Lato", system-ui, -apple-system, sans-serif; /* brödtext */
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
@@ -44,6 +28,71 @@
   --logo-font: "Sacramento", cursive;        /* företagsnamn/logga */
 }
 
+/* -------------------------------------
+   BAKGRUNDER (background utilities)
+------------------------------------- */
+
+.bg-black { background-color: var(--color-black) !important; }
+.bg-turquoise { background-color: var(--color-turquoise) !important; }
+.bg-navy { background-color: var(--color-navy) !important; }
+.bg-cream { background-color: var(--color-cream) !important; }
+.bg-latte { background-color: var(--color-latte) !important; }
+.bg-brown { background-color: var(--color-brown) !important; }
+.bg-brown-dark { background-color: var(--color-brown-dark) !important; }
+
+/* -------------------------------------
+   TEXT (färgklasser)
+------------------------------------- */
+
+.text-black { color: var(--color-black) !important; }
+.text-turquoise { color: var(--color-turquoise) !important; }
+.text-navy { color: var(--color-navy) !important; }
+.text-cream { color: var(--color-cream) !important; }
+.text-latte { color: var(--color-latte) !important; }
+.text-brown { color: var(--color-brown) !important; }
+.text-brown-dark { color: var(--color-brown-dark) !important; }
+
+/* -------------------------------------
+   BORDERS 
+------------------------------------- */
+
+.border-black { border-color: var(--color-black) !important; }
+.border-turquoise { border-color: var(--color-turquoise) !important; }
+.border-navy { border-color: var(--color-navy) !important; }
+.border-cream { border-color: var(--color-cream) !important; }
+.border-latte { border-color: var(--color-latte) !important; }
+.border-brown { border-color: var(--color-brown) !important; }
+.border-brown-dark { border-color: var(--color-brown-dark) !important; }
+
+/* -------------------------------------
+   KNAPPAR 
+------------------------------------- */
+
+.btn-latte {
+  background-color: var(--color-latte) !important;
+  color: var(--color-black) !important;
+  border: none;
+}
+
+.btn-latte:hover {
+  background-color: var(--color-brown-dark) !important;
+  color: var(--color-cream) !important;
+}
+
+.btn-turquoise {
+  background-color: var(--color-turquoise) !important;
+  color: var(--color-navy) !important;
+  border: none;
+}
+
+.btn-turquoise:hover {
+  background-color: var(--color-navy) !important;
+  color: var(--color-cream) !important;
+}
+
+/* -------------------------------------
+  
+------------------------------------- */
 
 /* Brödtext – hela sidan */
 body {
@@ -63,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   letter-spacing: 0.05em;
 font-size: clamp(2rem, 6vw, 5rem);
-color: var(--bs-success)
+color: var( --color-navy)
 
 }
 main {
@@ -71,9 +120,56 @@ main {
 }
 
 
+/* -------------------------------------
+  INDEX
+------------------------------------- */
+
+/* Lägg lite luft under navbaren */
+body {
+  padding-top: clamp(5rem, 12vw, 8rem);
+}
+
+main.container {
+  border-radius: 1.5rem;
+}
+
+.section-heading {
+  margin-bottom: 0.75rem;
+}
+
+.hero-image-wrapper,
+.section-image-wrapper {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.hero-image,
+.section-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.service-card,
+.reason-card {
+  background-color: var( --color-latte); 
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+/* CTA-rutan i "Så fungerar det" */
+.cta-card {
+  background-color: var( --color-latte);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
 
 
 
+/* -------------------------------------
+  
+------------------------------------- */
 
 /* företagsnamn */
 .sacramento-regular {

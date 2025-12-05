@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./assets/css/styles.css">  
 </head>
 
-  <body class="bg-primary">
+  <body class="bg-brown-dark">
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-turquoise mb-4 fixed-top">
         <div class="container">
             <a class="navbar-brand logo-text" href="index.html">Kaffeparty</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -40,39 +40,40 @@
 
  
      
-<main class="container bg-white ">
+<main class="container bg-white mt-5 py-5">
 
   <!-- HERO / INTRO -->
-  <section class="row align-items-center mb-5">
+  <section class="row align-items-center gy-4 mb-5">
     <div class="col-md-6">
-      <h2 class="mb-0">Kaffeparty - kaffe som upplevelse</h2>
+      <p class="text-uppercase small text-muted mb-1">Event & kaffe</p>
+      <h2 class="mb-3">Kaffeparty – kaffe som upplevelse</h2>
       <p class="lead mb-3">
-        Vi tar kaffebaren till dig - oavsett om du ordnar after work, kickoff,
+        Vi tar kaffebaren till dig – oavsett om du ordnar after work, kickoff,
         kundkväll eller födelsedagsfest.
       </p>
-      <p>
+      <p class="mb-4">
         Välj mellan färdigpaketerade kaffeparty-koncept eller skräddarsy din egen lösning
         med våra baristor, maskiner och bönor.
       </p>
-      <a href="kontakt.html" class="btn btn-secondary mt-3 bg-secondary">Boka kaffeparty</a>
+      <a href="kontakt.html" class="btn btn-turquoise px-4">
+        Boka kaffeparty
+      </a>
     </div>
-    <div class="col-md-6 text-center">
-     
-      <div class="bg-light border rounded-pill p-3">
-        <div class="text-center">
-  <img src="./assets/images/coffeebar.jpg" 
-       class="img-fluid rounded-pill shadow"
-       alt="Kaffebar på plats">
-</div>
+
+    <div class="col-md-6">
+      <div class="hero-image-wrapper">
+        <img src="./assets/images/coffeebar.jpg"
+             class="img-fluid hero-image"
+             alt="Kaffebar på plats">
       </div>
     </div>
   </section>
 
   <!-- VILKA ÄR VI -->
   <section class="mb-5" id="vilka-ar-vi">
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-3 mb-md-0 ">
-        <h3>Vilka är vi?</h3>
+    <div class="row gy-4 align-items-center">
+      <div class="col-md-6">
+        <h3 class="section-heading">Vilka är vi?</h3>
         <p>
           Kaffeparty är ett litet, personligt kafferosteri och eventbolag som
           brinner för riktigt gott kaffe och härliga möten mellan människor.
@@ -82,11 +83,11 @@
           som klarar allt från små mingel till större företagsevent.
         </p>
       </div>
-      <div class="col-md-6 text-center">
-        <div class="bg-light border rounded p-3">
-          <img src="./assets/images/barista-team.avif" 
-       class="img-fluid rounded shadow"
-       alt="Barista team">
+      <div class="col-md-6">
+        <div class="section-image-wrapper">
+          <img src="./assets/images/barista-team.avif"
+               class="img-fluid section-image"
+               alt="Barista team">
         </div>
       </div>
     </div>
@@ -94,41 +95,35 @@
 
   <!-- VAD GÖR VI -->
   <section class="mb-5" id="vad-gor-vi">
-    <h3 class="mb-4">Vad gör vi?</h3>
+    <h3 class="section-heading mb-4">Vad gör vi?</h3>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card h-100 border-0">
-          <div class="card-body">
-            <h4 class="card-title">Kaffeparty på plats</h4>
-            <p class="card-text">
-              Vi kommer ut till ert kontor eller event med barista, maskiner och
-              allt som behövs för en komplett kaffeupplevelse.
-            </p>
-          </div>
+        <div class="service-card h-100">
+          <h4>Kaffeparty på plats</h4>
+          <p>
+            Vi kommer ut till ert kontor eller event med barista, maskiner och
+            allt som behövs för en komplett kaffeupplevelse.
+          </p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="card h-100 border-0">
-          <div class="card-body">
-            <h4 class="card-title">Hyra kaffemaskin</h4>
-            <p class="card-text">
-              Hyr professionella maskiner per dag eller helg – perfekt för mässor,
-              pop up-butiker eller interna aktiviteter.
-            </p>
-          </div>
+        <div class="service-card h-100">
+          <h4>Hyra kaffemaskin</h4>
+          <p>
+            Hyr professionella maskiner per dag eller helg – perfekt för mässor,
+            pop up-butiker eller interna aktiviteter.
+          </p>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="card h-100 border-0">
-          <div class="card-body">
-            <h4 class="card-title">Kaffepaket & bönor</h4>
-            <p class="card-text">
-              Färdigpaketerade kaffeupplägg med bönor, tillbehör och receptkort
-              för dig som vill fixa kaffepartyt själv.
-            </p>
-          </div>
+        <div class="service-card h-100">
+          <h4>Kaffepaket &amp; bönor</h4>
+          <p>
+            Färdigpaketerade kaffeupplägg med bönor, tillbehör och receptkort
+            för dig som vill fixa kaffepartyt själv.
+          </p>
         </div>
       </div>
     </div>
@@ -136,10 +131,10 @@
 
   <!-- VARFÖR OSS -->
   <section class="mb-5" id="varfor-oss">
-    <h3 class="mb-4">Varför välja Kaffeparty?</h3>
+    <h3 class="section-heading mb-4">Varför välja Kaffeparty?</h3>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="border rounded p-3 h-100">
+        <div class="reason-card h-100">
           <h4>Personligt och flexibelt</h4>
           <p>
             Vi anpassar upplägg, meny och bemanning efter just ditt event – inget
@@ -149,7 +144,7 @@
       </div>
 
       <div class="col-md-4">
-        <div class="border rounded p-3 h-100">
+        <div class="reason-card h-100">
           <h4>Kvalitetskaffe</h4>
           <p>
             Vi använder noga utvalda bönor, rätt malningsgrad och maskiner som gör
@@ -159,10 +154,10 @@
       </div>
 
       <div class="col-md-4">
-        <div class="border rounded p-3 h-100">
+        <div class="reason-card h-100">
           <h4>Enkelt att boka</h4>
           <p>
-            Du berättar vad du vill göra, vi sköter resten - från logistik till
+            Du berättar vad du vill göra, vi sköter resten – från logistik till
             genomförande på plats.
           </p>
         </div>
@@ -172,33 +167,35 @@
 
   <!-- KAFFEPARTY – SÅ FUNGERAR DET -->
   <section class="mb-5" id="sa-fungerar-det">
-    <h3 class="mb-4">Kaffeparty - så fungerar det</h3>
-    <div class="row">
+    <h3 class="section-heading mb-4">Kaffeparty – så fungerar det</h3>
+    <div class="row g-4">
       <div class="col-lg-8">
-        <ol class="list-group list-group-item">
+        <ol class="list-group list-group-numbered">
           <li class="list-group-item">
-            <strong>1. Kontakta oss</strong><br>
+            <strong>Kontakta oss</strong><br>
             Berätta om datum, plats, antal gäster och typ av event.
           </li>
           <li class="list-group-item">
-            <strong>2. Välj upplägg</strong><br>
-            Vi hjälper dig att välja paket - från enkel kaffebar till full barista-upplevelse.
+            <strong>Välj upplägg</strong><br>
+            Vi hjälper dig att välja paket – från enkel kaffebar till full barista-upplevelse.
           </li>
           <li class="list-group-item">
-            <strong>3. Vi kommer till dig</strong><br>
+            <strong>Vi kommer till dig</strong><br>
             Vi tar med utrustning, bönor och barista. Du lutar dig tillbaka.
           </li>
           <li class="list-group-item">
-            <strong>4. Njut av kaffet</strong><br>
+            <strong>Njut av kaffet</strong><br>
             Gästerna får nybryggt kaffe och du får tid över att vara värd.
           </li>
         </ol>
       </div>
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <div class="bg-light border rounded p-3 h-100">
+      <div class="col-lg-4">
+        <div class="cta-card h-100">
           <h4 class="mb-3">Frågor eller specialönskemål?</h4>
           <p>Kontakta oss så skräddarsyr vi ett upplägg för just ditt event.</p>
-          <a href="kontakt.html" class="btn btn-secondary">Kontakta oss</a>
+          <a href="kontakt.html" class="btn btn-turquoise w-100">
+            Kontakta oss
+          </a>
         </div>
       </div>
     </div>
@@ -208,6 +205,8 @@
   <footer class="bg-dark text-light text-center py-3 mt-5">
     <p class="mb-0">© 2025 Kaffeparty | Webmaster: Therese Weidenstedt</p>
   </footer>
+
+
 
 
 
