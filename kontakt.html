@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./assets/css/styles.css">    
 </head>
 
-  <body class="bg-primary"> 
+  <body class="bg-brown-dark"> 
    
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-turquoise mb-4 fixed-top">
         <div class="container">
             <a class="navbar-brand logo-text" href="index.html">Kaffeparty</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -40,31 +40,125 @@
  
      
 <!-- MAIN CONTENT -->
-    <main class="container">
+<main class="container bg-white mt-5 py-5">
 
-        <!-- Sidans huvudrubrik -->
-        <h2 class="mb-4">Kontakt</h2>
+  <!-- Sidans huvudrubrik -->
+  <header class="mb-4 text-center">
+    <h2 class="mb-2">Kontakt</h2>
+    <p class="text-muted mb-0">
+      Hör av dig om du vill boka kaffeparty, hyra maskiner eller bara prata kaffe.
+    </p>
+  </header>
 
-        <!-- Sektion 1 -->
-        <section class="mb-5">
-            <!-- Om företaget, mer information -->
-        </section>
+  <!-- Sektion 1 – Om företaget / kontaktinfo -->
+  <section class="mb-5">
+    <div class="row gy-4 align-items-start">
+      <!-- Text om företaget -->
+      <div class="col-md-7">
+        <h3 class="h4 mb-3">Om Kaffeparty</h3>
+        <p>
+          Kaffeparty är ett personligt kafferosteri och eventbolag som hjälper företag
+          och privatpersoner att skapa minnesvärda stunder med riktigt gott kaffe.
+        </p>
+        <p>
+          Vi finns i Stockholm med omnejd och arbetar både med engångsevent, återkommande
+          kontorslösningar och specialanpassade kaffemenyer för större arrangemang.
+        </p>
+        <p>
+          Tveka inte att höra av dig om du vill bolla idéer, få offert eller har frågor
+          kring vad som är möjligt för just ditt event.
+        </p>
+      </div>
 
-        <!-- Sektion 2 -->
-        <section class="mb-5">
-            <!-- Kontakt bild telefon, namn epost till VD -->
-             <!-- Kontakt bild telefon, namn epost till HR-ansvarig -->
-        </section>
-        
-        <!-- FOOTER -->
-    <footer class="bg-dark text-light text-center py-3 mt-5">
-        <p class="mb-0">© <!-- Årtal --> <!-- Företagsnamn --> | Webmaster: <!-- Ditt namn/mail --></p>
-    </footer>
+      <!-- Allmänna kontaktuppgifter -->
+      <div class="col-md-5">
+        <div class="border rounded-3 p-3 p-md-4 bg-light">
+          <h3 class="h5 mb-3">Allmänna kontaktuppgifter</h3>
+          <p class="mb-1"><strong>E-post:</strong> info@kaffeparty.se</p>
+          <p class="mb-1"><strong>Telefon:</strong> 070-123 45 67</p>
+          <p class="mb-3"><strong>Adress:</strong><br>
+            Kaffeparty AB<br>
+            Kaffegränd 5<br>
+            113 37 Stockholm
+          </p>
+          <p class="small text-muted mb-0">
+            Vi återkommer normalt inom 1–2 arbetsdagar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-  
-    </main>
+  <!-- Sektion 2 – Kontaktpersoner -->
+  <section class="mb-5">
+    <h3 class="h4 mb-4 text-center">Kontaktpersoner</h3>
+    <div class="row g-4">
+
+      <!-- VD -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 bg-light">
+          <div class="card-body d-flex flex-column flex-sm-row align-items-center gap-3">
+            <!-- Bild -->
+            <div class="flex-shrink-0">
+              <img src="./assets/images/vd.webp"
+                   alt="VD Kaffeparty"
+                   class="rounded-circle img-fluid"
+                   style="width: 120px; height: 120px; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div>
+              <h4 class="h5 mb-1">Alexandra Berg</h4>
+              <p class="mb-2 text-muted">VD & grundare</p>
+              <p class="mb-1"><strong>Telefon:</strong> 070-111 22 33</p>
+              <p class="mb-2"><strong>E-post:</strong> alexandra@kaffeparty.se</p>
+              <p class="small mb-0">
+                Kontakta Alexandra om du vill diskutera större samarbeten,
+                återkommande lösningar eller övergripande frågor kring Kaffeparty.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HR-ansvarig -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 bg-light">
+          <div class="card-body d-flex flex-column flex-sm-row align-items-center gap-3">
+            <!-- Bild -->
+            <div class="flex-shrink-0">
+              <img src="./assets/images/hr.webp"
+                   alt="HR-ansvarig Kaffeparty"
+                   class="rounded-circle img-fluid"
+                   style="width: 120px; height: 120px; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div>
+              <h4 class="h5 mb-1">Mikael Jonsson</h4>
+              <p class="mb-2 text-muted">HR & personal</p>
+              <p class="mb-1"><strong>Telefon:</strong> 070-444 55 66</p>
+              <p class="mb-2"><strong>E-post:</strong> hr@kaffeparty.se</p>
+              <p class="small mb-0">
+                Kontakta Mikael om du är intresserad av att jobba som barista,
+                söker praktik eller har frågor om personal och rekrytering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Kaffeparty | Webmaster: Therese Weidenstedt</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</main>
+
 </body>
 </html>
