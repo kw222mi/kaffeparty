@@ -102,8 +102,13 @@ body {
 }
 
 /* Rubriker */
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: var(--heading-font);
+}
+h2 {
+  font-family: var( --logo-font);
+  font-size: 4rem;
+  color: var(--color-turquoise);
 }
 
 .logo-text {
@@ -116,7 +121,7 @@ color: var( --color-navy)
 
 }
 main {
-   padding-top: clamp(5rem, 14vw, 10rem);/* lägger sidans innehåll under navbar*/
+   padding-top: clamp(4rem, 14vw, 10rem);/* lägger sidans innehåll under navbar*/
 }
 
 
@@ -168,10 +173,43 @@ main.container {
 
 
 /* -------------------------------------
+  PRODUKTER
+------------------------------------- */
+.product-image {
+  height: 260px;             /* Bestäm höjd du gillar */
+  object-fit: contain;         /* Beskär bilden snyggt */
+  width: 100%;               /* Gör bilden responsiv */
+  border-radius: 0.5rem;     /* Valfritt, snyggare hörn */
+}
+
+.card.product-card {
+  border-radius: .75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  background-color: var(--color-cream); /* din latte/vitish */
+}
+
+.product-image-wrapper {
+  background-color: var(--color-cream);
+  border: 1px solid var(--color-latte);
+  border-radius: .75rem;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: .75rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* -------------------------------------
   
 ------------------------------------- */
-
-
 
 /* företagsnamn */
 .sacramento-regular {
